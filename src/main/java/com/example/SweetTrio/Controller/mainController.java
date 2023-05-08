@@ -31,4 +31,10 @@ public class mainController {
         return "Order";
     }
 
+    @GetMapping("/contacts")
+    public String mainContacts( Model model) {
+        model.addAttribute("title", "Contacts page");
+        return "Contacts";
+    }
+
 }
